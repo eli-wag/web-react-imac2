@@ -1,0 +1,104 @@
+.productCard {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s ease-in-out;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 2vh;
+  }
+
+  .productCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .firstPresentationProduct {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .productImg {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .productDescription {
+    flex-grow: 1;
+  }
+  
+  .productTitle h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+  }
+  
+  .productInformations {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+  }
+  
+  .infoElement {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .timeImg, .miamImg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  #extendedIngredients {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+  
+  .instructions {
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  
+  .instructions h3 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .instructions p {
+    margin: 5px 0;
+  }
+  
+  @media (max-width: 600px) {
+    .productCard {
+      padding: 10px;
+    }
+  
+    .firstPresentationProduct {
+      flex-direction: column;
+    }
+  
+    .productTitle h1 {
+      font-size: 20px;
+    }
+  
+    .infoElement {
+      font-size: 14px;
+    }
+  
+    #extendedIngredients, .instructions {
+      font-size: 14px;
+    }
+  }
+  

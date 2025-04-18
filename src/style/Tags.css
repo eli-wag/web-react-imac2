@@ -1,0 +1,44 @@
+.tags {
+    font-family : calibri;
+    width: 100vw;
+    height: 10vh;
+    background-color: #7fad9b;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.selection {
+    border-radius: 5vh;
+    width: 20vw;
+    height: 5vh;
+    background-color: #7fad9b;
+    border: solid 2px #f3ece9;
+
+    ;
+    color: #f3ece9;
+
+    ;
+    text-align: center;
+}
+
+@keyframes selectionColor {
+    from {
+        background-color: #7fad9b;
+        color: #f3ece9;
+    }
+
+    to {
+        background-color: #f3ece9;
+
+        ;
+        background-color: #7fad9b;
+    }
+}
+
+.selection:hover {
+    animation-name: selectionColor;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+

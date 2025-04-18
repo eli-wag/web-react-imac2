@@ -1,0 +1,82 @@
+.header {
+    width: 100vw;
+    height: 10vh;
+    background-color: #7fad9b;
+}
+
+.search {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #acc2af;
+}
+
+.searchBar {
+    border-top-left-radius: 5vh;
+    border-bottom-left-radius: 5vh;
+    width: 40vw;
+    height: 5vh;
+    margin-top: 2.5vh;
+    background-color: #7fad9b;
+    border: solid 2px #f3ece9;
+    padding-left: 2%;
+}
+
+.btnSearch {
+    height: 5.65vh;
+    width: 5vh;
+    border-top-right-radius: 5vh;
+    border-bottom-right-radius: 5vh;
+    margin-top: 2.5vh;
+    background-color: #7fad9b;
+    border: solid 2px #f3ece9;
+}
+
+.searchGlass {
+    width: 70%;
+    color: black;
+}
+
+@keyframes searchBarColor {
+    from {
+        background-color: #7fad9b;
+    }
+
+    to {
+        background-color: #acc2af;
+    }
+}
+
+.searchBar:hover {
+    animation-name: searchBarColor;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes btnSearchColor {
+    from {
+    background-color: #7fad9b;
+    }
+
+    to {
+        background-color: #f3ece9;
+
+        ;
+    }
+}
+
+.btnSearch:hover {
+    animation-name: btnSearchColor;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+    #header {
+        text-align: center;
+    }
+
+
+}

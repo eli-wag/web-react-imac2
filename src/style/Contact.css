@@ -1,0 +1,17 @@
+body{
+    font-family: calibri;
+}
+
+.contactSection{
+    margin : 2%;
+}
+
+.contactHeader{
+    width: 100vw;
+    height: 10vh;
+    color : white;
+    padding-left : 2vw;
+    display : flex;
+    vertical-align: center;
+    background-color: #7fad9b;
+}
